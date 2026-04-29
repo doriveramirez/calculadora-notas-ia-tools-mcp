@@ -1,4 +1,4 @@
-Publicaci?n en GitHub ejecutada
+Publicación en GitHub ejecutada
 
 Repositorio: https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp
 Issue creado/verificado: #1 - Mejoras futuras

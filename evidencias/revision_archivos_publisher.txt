@@ -1,4 +1,4 @@
-Revisi?n del agente Publisher
+Revisión del agente Publisher
 
 AGENTS.md: OK
 PRD.md: OK
@@ -10,7 +10,7 @@ test_main.py: OK
 
 Rama local: main
 
-Repositorio p?blico:
+Repositorio público:
 https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp
 
 Issue creado:
