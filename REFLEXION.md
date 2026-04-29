@@ -7,7 +7,7 @@ Esta práctica permite ver que un agente no solo redacta texto, sino que puede a
 Separar `calcular_media` y `calcular_mediana` en `tools_notas.py` hace más fácil comprobar el funcionamiento, reutilizar el cálculo y mantener `main.py` más claro.
 
 ## Papel de la parte de GitHub y MCP
-La parte de Publisher sirve para entender que un agente también puede encargarse de la publicación del proyecto y del seguimiento de mejoras en GitHub, dejando constancia del trabajo realizado fuera del código principal.
+La parte de Publisher sirve para entender que un agente también puede encargarse de la publicación del proyecto y del seguimiento de mejoras en GitHub, dejando constancia del trabajo realizado fuera del código principal. En esta entrega no se quedó solo en la preparación: se usó el servidor GitHub MCP para identificar la cuenta con `get_me`, añadir un comentario al issue `#1` con `add_issue_comment` y comprobarlo después con `issue_read`.
 
 ## Qué mejoraría
 Como mejora futura, añadiría una forma de guardar resultados, más validaciones y más pruebas automáticas, pero manteniendo el proyecto sencillo.

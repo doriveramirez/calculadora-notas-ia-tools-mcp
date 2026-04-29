@@ -237,11 +237,12 @@ def image_sources() -> list[tuple[Path, Path, str, str]]:
         (EVIDENCES / "ejecucion_mediana.txt", EVIDENCES / "08_programa_mediana.png", "#111827", "#fde68a"),
         (EVIDENCES / "tester_interaccion.md", EVIDENCES / "09_tester.png", "#1f2937", "#f9fafb"),
         (EVIDENCES / "publisher_interaccion.md", EVIDENCES / "10_publisher.png", "#0f172a", "#e0f2fe"),
-        (EVIDENCES / "mcp_intento.md", EVIDENCES / "11_mcp_intento.png", "#1c1917", "#fae8ff"),
+        (EVIDENCES / "github_mcp_uso.md", EVIDENCES / "11_github_mcp_uso.png", "#1c1917", "#fae8ff"),
         (ROOT / "README.md", EVIDENCES / "12_readme.png", "#13111c", "#f3f4f6"),
         (EVIDENCES / "revision_archivos_publisher.txt", EVIDENCES / "13_revision_archivos_publisher.png", "#0c1426", "#dbeafe"),
         (EVIDENCES / "pruebas_unitarias.txt", EVIDENCES / "14_pruebas_unitarias.png", "#0b1220", "#dcfce7"),
         (EVIDENCES / "github_publicacion_y_issue.txt", EVIDENCES / "15_github_publicacion_issue.png", "#102a43", "#d9f99d"),
+        (EVIDENCES / "github_mcp_issue_comment.txt", EVIDENCES / "16_github_mcp_issue_comment.png", "#111827", "#fee2e2"),
     ]
 
 
@@ -309,7 +310,7 @@ def summary_table(styles: StyleSheet1) -> Table:
         ["Tools", "Separación del cálculo en `tools_notas.py`."],
         ["Desarrollo", "Adaptación de `main.py` y pruebas unitarias."],
         ["Verificación", "Ejecuciones reales de media y mediana."],
-        ["Publisher", "Publicación real en GitHub y creación del issue de mejoras."],
+        ["Publisher", "Publicación real en GitHub y uso comprobado de GitHub MCP."],
     ]
     table = Table(rows, colWidths=[4.2 * cm, 11.0 * cm], hAlign="LEFT")
     table.setStyle(
@@ -343,18 +344,19 @@ def build_story(styles: StyleSheet1) -> list:
     builder = (EVIDENCES / "builder_interaccion.md").read_text(encoding="utf-8")
     tester = (EVIDENCES / "tester_interaccion.md").read_text(encoding="utf-8")
     publisher = (EVIDENCES / "publisher_interaccion.md").read_text(encoding="utf-8")
-    mcp = (EVIDENCES / "mcp_intento.md").read_text(encoding="utf-8")
+    github_mcp = (EVIDENCES / "github_mcp_uso.md").read_text(encoding="utf-8")
     run_media = (EVIDENCES / "ejecucion_media.txt").read_text(encoding="utf-8")
     run_mediana = (EVIDENCES / "ejecucion_mediana.txt").read_text(encoding="utf-8")
     tests = (EVIDENCES / "pruebas_unitarias.txt").read_text(encoding="utf-8")
     publisher_review = (EVIDENCES / "revision_archivos_publisher.txt").read_text(encoding="utf-8")
     github_publication = (EVIDENCES / "github_publicacion_y_issue.txt").read_text(encoding="utf-8")
+    github_mcp_comment = (EVIDENCES / "github_mcp_issue_comment.txt").read_text(encoding="utf-8")
 
     story = []
     story.append(Spacer(1, 2.8 * cm))
     story.append(Paragraph("Práctica: Desarrollo con agentes", styles["CoverTitle"]))
     story.append(Paragraph("Parte 2 y Parte 3", styles["CoverTitle"]))
-    story.append(Paragraph("Calculadora de notas con tools y preparación para GitHub", styles["CoverSubtitle"]))
+    story.append(Paragraph("Calculadora de notas con tools y GitHub MCP", styles["CoverSubtitle"]))
     story.append(Paragraph(f"Fecha: {datetime.now().strftime('%d/%m/%Y')}", styles["CoverSubtitle"]))
     story.append(Spacer(1, 0.8 * cm))
     story.append(summary_table(styles))
@@ -362,7 +364,7 @@ def build_story(styles: StyleSheet1) -> list:
     story.append(
         Paragraph(
             "En esta práctica se amplía la calculadora de notas para separar la lógica de cálculo "
-            "en funciones externas y documentar la preparación del proyecto para GitHub.",
+            "en funciones externas y documentar la publicación del proyecto junto con el uso real de GitHub MCP.",
             styles["BodyCopy"],
         )
     )
@@ -382,7 +384,7 @@ def build_story(styles: StyleSheet1) -> list:
             [
                 "Se separa la lógica de cálculo en `tools_notas.py`.",
                 "El usuario puede elegir entre media o mediana.",
-                "La entrega documenta la publicación real en GitHub y el issue creado.",
+                "La entrega documenta la publicación real en GitHub y una acción ejecutada mediante GitHub MCP.",
             ],
             styles,
         )
@@ -433,14 +435,16 @@ def build_story(styles: StyleSheet1) -> list:
     story.append(Preformatted(tests, styles["CodeStyle"]))
     story.append(PageBreak())
 
-    story.append(Paragraph("8. Publisher y preparación para GitHub", styles["SectionTitle"]))
+    story.append(Paragraph("8. Publisher, GitHub y MCP", styles["SectionTitle"]))
     story.extend(md_flowables(publisher, styles, skip_first_heading=True))
     story.append(Paragraph("8.1. Revisión local del proyecto", styles["SubTitle"]))
     story.append(Preformatted(publisher_review, styles["CodeStyle"]))
     story.append(Paragraph("8.2. Publicación e issue en GitHub", styles["SubTitle"]))
     story.append(Preformatted(github_publication, styles["CodeStyle"]))
-    story.append(Paragraph("8.3. Registro de la publicación", styles["SubTitle"]))
-    story.extend(md_flowables(mcp, styles, skip_first_heading=True))
+    story.append(Paragraph("8.3. Uso real de GitHub MCP", styles["SubTitle"]))
+    story.extend(md_flowables(github_mcp, styles, skip_first_heading=True))
+    story.append(Paragraph("8.4. Registro del comentario creado por MCP", styles["SubTitle"]))
+    story.append(Preformatted(github_mcp_comment, styles["CodeStyle"]))
     story.append(PageBreak())
 
     story.append(Paragraph("9. Documentación final", styles["SectionTitle"]))

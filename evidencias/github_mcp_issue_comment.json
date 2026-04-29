@@ -1,0 +1,211 @@
+{
+  "summary": {
+    "server": "github-mcp-server",
+    "endpoint": "https://api.githubcopilot.com/mcp/",
+    "protocol": "2025-06-18",
+    "repository": "doriveramirez/calculadora-notas-ia-tools-mcp",
+    "issue_number": 1,
+    "comment_marker": "Verificacion realizada mediante GitHub MCP para la practica de desarrollo con agentes.",
+    "comment_created": true,
+    "comment_present_after_verification": true,
+    "timestamp": "2026-04-29T19:25:45.853820+00:00"
+  },
+  "initialize": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-headers": "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version, Last-Event-ID, Authorization, X-MCP-Readonly, X-MCP-Toolsets, X-MCP-Tools, X-MCP-Exclude-Tools, X-MCP-Features, X-MCP-Lockdown, X-MCP-Insiders",
+      "access-control-allow-methods": "GET, POST, DELETE, OPTIONS",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Expose-Headers": "Mcp-Session-Id, WWW-Authenticate",
+      "access-control-max-age": "86400",
+      "Cache-Control": "no-cache, no-transform",
+      "Content-Security-Policy": "default-src 'none'; sandbox",
+      "Content-Type": "text/event-stream",
+      "Date": "Wed, 29 Apr 2026 19:25:42 GMT",
+      "mcp-session-id": "[redacted]",
+      "Server": "github-mcp-server-remote",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Transfer-Encoding": "chunked",
+      "x-github-backend": "Kubernetes",
+      "X-GitHub-Request-Id": "152C:4010A:C864BE1:DC02D4A:69F25B35",
+      "connection": "close"
+    },
+    "parsed": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "capabilities": {
+          "completions": {},
+          "prompts": {},
+          "resources": {},
+          "tools": {}
+        },
+        "protocolVersion": "2025-06-18",
+        "serverInfo": {
+          "name": "github-mcp-server",
+          "title": "GitHub MCP Server",
+          "version": "github-mcp-server/remote-3242d9e12bd9ffa96a76388614e42ce90d05f764",
+          "icons": [
+            {
+              "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAADK0lEQVRIibWVQWhcVRSGv3Pfy0zGdBIMRWk7iziMTpORptpqiNSNG1dNizaFFlxIoYuCC7NwJdiVlhYprtwpighCF9GtuhCRtuCoaWdqGF7HkE4aWm1CpklmJpl3j4vMS99M2k4G9N+8d8659/8u9553H/zPkscVM5lMf03do6iOKbJXIAGgUBJ0GpHvolKfzOfzCx0BEonRWDRemRD0PaC3zSKXED1fLfdcLJUuV9oC0ukXdluxkyq81Ma4VX9Y4x4p5rOzjwSkUvsSdMkVYE+H5oHmjM9IoTA1FyRM8JJIjMbokm83zUW/Vvi5raXwC8rnjWiPdXRyYGCgOyi7wUs0XpkAXmyEa/XV8qmZmZnqc0P7XrXKW2BuKDovgorqLoWMFb4p3rj2I4w7qcHCMSAOctDt7n0X+GiDT6NbrPsXDw50xftzKg7odvcmtXf4DsJTjXBpzbXPzF6/vmgAauoepblbnGTyQLvu2VQmk4kgxEKpvui6cwSCM1Ada5qheq5YzC5tF5DP59dQzjYlZcOzccgyGK65mC+2ax7IWPfLcGxhKARgV7i4vBy70ymgUMj+A9SDWGB3GOCEB/f0VJ/sFJBKjfQS6srAOwD8HR7su/7BTgE2Umn98u9uAgR+ayqpnOkUIK1zZMPTACjyQzOA11ND+z+E8aate4TMs4PD7wu80ezP940nJJMH+ky0XgKeAHkH1TcRXgNywFeoueJN//5T2CCZGT7kWBlV9CSwvwV6n/XuhOddLRuAYjG7hMjHgEH1tEb0BEgWeB44J8aebF2243Nc0fMPMUfgguddLUOoe/r7dlwWJzqGMCxq6q5Wz/jSVQZ+Nb795N69u4thk/6dT7uInNiyYcoU9ZW3FxYWfAjdpp7n1XzjHAbmUJ3wTXQ8gvOZb+oXV1d3zLf6WEcWW3MoJXX9w57n1YKUCdeL+eysOv4oyrQqn65Tv+1adz4WrxzaskXWNs0V5Jq6/is3c7lb4byhRTdzuVvUV0ZQPgDuA6jqlj+fqhvkllE9q+vLL7eab4Afo1RqpJdI9Rhr3ZeCQwuUTqfjvoket7WuS51cjP+5/gWC8y5uIkrtDQAAAABJRU5ErkJggg==",
+              "mimeType": "image/png",
+              "theme": "light"
+            },
+            {
+              "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB8ElEQVRIibWVu09UQRSHv9k1IgW7AY0RBWKsTGx9ND4qS5F/wEYLDb0xAY0UxkdrZ2NHYWfsaYyVT4iJwZpNjJooLBQEYz6LvZsdxmH3LtFfN3PO+X5zzzwu/GeFbkF1BJgCJoHjwFgRagDLwAvgeQjhR1+u6qA6q67ZW6vqjDpYFn5YfV0CnOqDOtELPqY2dgFvq6Ee6daWd1HyvPqyBPSV+jQav1H3tbkhMpgF7hXDLaAeQthUzwFXgE/AF0BgFDgBPAshLKhV4CcwVNTPhBAexKsfcfuGbqhdT1imA1+j+lV1GKBSxKeAWpRfTca94HuB+BTVgcuxwWRS8zCEsFbWIISwBcwl0x2m+jnZuKNl4RHjQMJYjoPNJFju0vxt8itiNKHTomqSO7wLeA3YE01VYoPvSf7Jfg2AU8n4W2zwPglO78Igrekw1enMDb1fXKCuUivq7Uz99Tiprq6rvwuzhSLpo3pLvZABn1Vv2nrkUjWLPdlWMFcEF9WD6tuo4EnG4HEG3Nad3KcOqEtRe/bb+ic8Uo9l8i/tAF9UB3bq54StJ3dTvaGOqofM3IuiRalW1PH8bnUKx4tVxLqYyTuf5Czl4JV0IoSwApwB7gLr7enMWtpzG7TeodNFbXmpNfWq6YloxYbUa2q9L+i/1h8/EAGdUrF9ZQAAAABJRU5ErkJggg==",
+              "mimeType": "image/png",
+              "theme": "dark"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "initialized_notification": {
+    "status": 202,
+    "headers": {
+      "access-control-allow-headers": "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version, Last-Event-ID, Authorization, X-MCP-Readonly, X-MCP-Toolsets, X-MCP-Tools, X-MCP-Exclude-Tools, X-MCP-Features, X-MCP-Lockdown, X-MCP-Insiders",
+      "access-control-allow-methods": "GET, POST, DELETE, OPTIONS",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Expose-Headers": "Mcp-Session-Id, WWW-Authenticate",
+      "access-control-max-age": "86400",
+      "Content-Length": "0",
+      "Content-Security-Policy": "default-src 'none'; sandbox",
+      "Date": "Wed, 29 Apr 2026 19:25:42 GMT",
+      "Server": "github-mcp-server-remote",
+      "Strict-Transport-Security": "max-age=31536000",
+      "x-github-backend": "Kubernetes",
+      "X-GitHub-Request-Id": "AB2C:37135:C962E0C:DD08BA4:69F25B36",
+      "connection": "close"
+    }
+  },
+  "get_me": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-headers": "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version, Last-Event-ID, Authorization, X-MCP-Readonly, X-MCP-Toolsets, X-MCP-Tools, X-MCP-Exclude-Tools, X-MCP-Features, X-MCP-Lockdown, X-MCP-Insiders",
+      "access-control-allow-methods": "GET, POST, DELETE, OPTIONS",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Expose-Headers": "Mcp-Session-Id, WWW-Authenticate",
+      "access-control-max-age": "86400",
+      "Cache-Control": "no-cache, no-transform",
+      "Content-Security-Policy": "default-src 'none'; sandbox",
+      "Content-Type": "text/event-stream",
+      "Date": "Wed, 29 Apr 2026 19:25:43 GMT",
+      "Server": "github-mcp-server-remote",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Transfer-Encoding": "chunked",
+      "x-github-backend": "Kubernetes",
+      "X-GitHub-Request-Id": "B62C:2AE020:C3B7465:D767BD8:69F25B36",
+      "connection": "close"
+    },
+    "parsed": {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"login\":\"doriveramirez\",\"id\":44475416,\"profile_url\":\"https://github.com/doriveramirez\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/44475416?v=4\",\"details\":{\"blog\":\"https://www.linkedin.com/in/david-orive-7a583518b/\",\"location\":\"Spain, Canary Islands\",\"public_repos\":30,\"public_gists\":0,\"followers\":8,\"following\":13,\"created_at\":\"2018-10-25T16:16:16Z\",\"updated_at\":\"2026-04-06T18:19:49Z\",\"private_gists\":1,\"total_private_repos\":7,\"owned_private_repos\":7}}"
+          }
+        ]
+      }
+    }
+  },
+  "issue_comments_before": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-headers": "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version, Last-Event-ID, Authorization, X-MCP-Readonly, X-MCP-Toolsets, X-MCP-Tools, X-MCP-Exclude-Tools, X-MCP-Features, X-MCP-Lockdown, X-MCP-Insiders",
+      "access-control-allow-methods": "GET, POST, DELETE, OPTIONS",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Expose-Headers": "Mcp-Session-Id, WWW-Authenticate",
+      "access-control-max-age": "86400",
+      "Cache-Control": "no-cache, no-transform",
+      "Content-Security-Policy": "default-src 'none'; sandbox",
+      "Content-Type": "text/event-stream",
+      "Date": "Wed, 29 Apr 2026 19:25:44 GMT",
+      "Server": "github-mcp-server-remote",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Transfer-Encoding": "chunked",
+      "x-github-backend": "Kubernetes",
+      "X-GitHub-Request-Id": "102C:A917E:C52B33A:D8DEF4A:69F25B37",
+      "connection": "close"
+    },
+    "parsed": {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "[]"
+          }
+        ]
+      }
+    }
+  },
+  "add_issue_comment": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-headers": "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version, Last-Event-ID, Authorization, X-MCP-Readonly, X-MCP-Toolsets, X-MCP-Tools, X-MCP-Exclude-Tools, X-MCP-Features, X-MCP-Lockdown, X-MCP-Insiders",
+      "access-control-allow-methods": "GET, POST, DELETE, OPTIONS",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Expose-Headers": "Mcp-Session-Id, WWW-Authenticate",
+      "access-control-max-age": "86400",
+      "Cache-Control": "no-cache, no-transform",
+      "Content-Security-Policy": "default-src 'none'; sandbox",
+      "Content-Type": "text/event-stream",
+      "Date": "Wed, 29 Apr 2026 19:25:45 GMT",
+      "Server": "github-mcp-server-remote",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Transfer-Encoding": "chunked",
+      "x-github-backend": "Kubernetes",
+      "X-GitHub-Request-Id": "252C:328887:D49315A:E805F85:69F25B38",
+      "connection": "close"
+    },
+    "parsed": {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"id\":\"4346856335\",\"url\":\"https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp/issues/1#issuecomment-4346856335\"}"
+          }
+        ]
+      }
+    }
+  },
+  "issue_comments_after": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-headers": "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version, Last-Event-ID, Authorization, X-MCP-Readonly, X-MCP-Toolsets, X-MCP-Tools, X-MCP-Exclude-Tools, X-MCP-Features, X-MCP-Lockdown, X-MCP-Insiders",
+      "access-control-allow-methods": "GET, POST, DELETE, OPTIONS",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Expose-Headers": "Mcp-Session-Id, WWW-Authenticate",
+      "access-control-max-age": "86400",
+      "Cache-Control": "no-cache, no-transform",
+      "Content-Security-Policy": "default-src 'none'; sandbox",
+      "Content-Type": "text/event-stream",
+      "Date": "Wed, 29 Apr 2026 19:25:45 GMT",
+      "Server": "github-mcp-server-remote",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Transfer-Encoding": "chunked",
+      "x-github-backend": "Kubernetes",
+      "X-GitHub-Request-Id": "C52C:738C1:C9242E7:DCBFB9A:69F25B39",
+      "connection": "close"
+    },
+    "parsed": {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "[{\"id\":4346856335,\"body\":\"Verificacion realizada mediante GitHub MCP para la practica de desarrollo con agentes. Fecha: 2026-04-29 20:25:41\",\"html_url\":\"https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp/issues/1#issuecomment-4346856335\",\"user\":{\"login\":\"doriveramirez\",\"id\":44475416,\"profile_url\":\"https://github.com/doriveramirez\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/44475416?v=4\"},\"author_association\":\"OWNER\",\"reactions\":{\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"confused\":0,\"heart\":0,\"hooray\":0,\"rocket\":0,\"eyes\":0},\"created_at\":\"2026-04-29T19:25:44Z\",\"updated_at\":\"2026-04-29T19:25:44Z\"}]"
+          }
+        ]
+      }
+    }
+  },
+  "matched_comment_after": "[{\"id\":4346856335,\"body\":\"Verificacion realizada mediante GitHub MCP para la practica de desarrollo con agentes. Fecha: 2026-04-29 20:25:41\",\"html_url\":\"https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp/issues/1#issuecomment-4346856335\",\"user\":{\"login\":\"doriveramirez\",\"id\":44475416,\"profile_url\":\"https://github.com/doriveramirez\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/44475416?v=4\"},\"author_association\":\"OWNER\",\"reactions\":{\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"confused\":0,\"heart\":0,\"hooray\":0,\"rocket\":0,\"eyes\":0},\"created_at\":\"2026-04-29T19:25:44Z\",\"updated_at\":\"2026-04-29T19:25:44Z\"}]"
+}

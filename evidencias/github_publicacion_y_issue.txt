@@ -1,5 +1,16 @@
 Publicación en GitHub ejecutada
 
-Repositorio: https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp
-Issue creado/verificado: #1 - Mejoras futuras
-URL del issue: https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp/issues/1
+Repositorio público:
+https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp
+
+Issue principal:
+#1 - Mejoras futuras
+https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp/issues/1
+
+Verificación adicional mediante GitHub MCP:
+- get_me
+- add_issue_comment
+- issue_read
+
+Comentario creado por MCP:
+https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp/issues/1#issuecomment-4346856335

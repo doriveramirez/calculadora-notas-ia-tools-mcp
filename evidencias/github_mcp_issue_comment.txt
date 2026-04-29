@@ -1,0 +1,24 @@
+Uso real de GitHub MCP verificado
+
+Servidor: github-mcp-server
+Endpoint: https://api.githubcopilot.com/mcp/
+Repositorio: doriveramirez/calculadora-notas-ia-tools-mcp
+Usuario autenticado con get_me: doriveramirez
+Issue usado: #1 - Mejoras futuras
+
+Llamadas MCP realizadas:
+- initialize -> 200
+- notifications/initialized -> 202
+- get_me -> 200
+- add_issue_comment -> 200
+- issue_read (get_comments) -> 200
+
+Comentario creado por MCP:
+Verificacion realizada mediante GitHub MCP para la practica de desarrollo con agentes. Fecha: 2026-04-29 20:25:41
+
+URL del comentario:
+https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp/issues/1#issuecomment-4346856335
+
+Pruebas guardadas:
+- evidencias/github_mcp_initialize_and_tools.json
+- evidencias/github_mcp_issue_comment.json

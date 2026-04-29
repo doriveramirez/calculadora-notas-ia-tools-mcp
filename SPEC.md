@@ -1,7 +1,7 @@
-# SPEC - Cálculo de notas con media, mediana y preparación para GitHub
+# SPEC - Cálculo de notas con media, mediana y uso de GitHub MCP
 
 ## Problema
-Se necesita una aplicación sencilla para calcular la nota final de un alumno a partir de tres notas. El usuario podrá elegir si quiere calcular la media o la mediana. Además, el proyecto debe quedar preparado para su publicación en GitHub y documentar el intento de uso de MCP si estuviera disponible.
+Se necesita una aplicación sencilla para calcular la nota final de un alumno a partir de tres notas. El usuario podrá elegir si quiere calcular la media o la mediana. Además, el proyecto debe quedar publicado en GitHub y acompañado por una prueba real del uso de GitHub MCP sobre el repositorio.
 
 ## Solución esperada
 El programa solicitará:
@@ -35,3 +35,4 @@ Después:
 - Si el resultado numérico es mayor o igual que 5, muestra `Aprobado`
 - Si el resultado numérico es menor que 5, muestra `Suspenso`
 - El proyecto queda documentado y preparado para GitHub
+- La entrega incluye evidencia real del uso de GitHub MCP

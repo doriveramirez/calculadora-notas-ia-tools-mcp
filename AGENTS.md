@@ -56,11 +56,12 @@ Salida esperada:
 Rol:
 - Preparar el proyecto para publicarlo en GitHub.
 - Revisar que existen los archivos principales.
-- Usar GitHub MCP si está disponible.
+- Usar GitHub MCP sobre el repositorio para dejar una evidencia real.
 - Crear un resumen del proyecto.
-- Crear opcionalmente un issue con mejoras futuras.
+- Crear y mantener un issue con mejoras futuras.
 
 Salida esperada:
 - Comprobación final de archivos.
-- Proyecto preparado para GitHub.
-- Issue opcional con mejoras.
+- Proyecto publicado en GitHub.
+- Evidencia del uso de GitHub MCP.
+- Issue con mejoras.
