@@ -1,0 +1,5 @@
+Introduce el nombre del alumno: Introduce la nota 1: Introduce la nota 2: Introduce la nota 3: ¿Qué quieres calcular? media/mediana: 
+Alumno: Marta
+Tipo de cálculo: media
+Resultado numérico: 9.0
+Resultado: Aprobado

@@ -1,0 +1,12 @@
+test_calcular_media (test_main.TestToolsNotas.test_calcular_media) ... ok
+test_calcular_mediana (test_main.TestToolsNotas.test_calcular_mediana) ... ok
+test_determine_result (test_main.TestToolsNotas.test_determine_result) ... ok
+test_parse_grade_invalid (test_main.TestToolsNotas.test_parse_grade_invalid) ... ok
+test_parse_grade_valid (test_main.TestToolsNotas.test_parse_grade_valid) ... ok
+test_validar_notas_requires_list (test_main.TestToolsNotas.test_validar_notas_requires_list) ... ok
+test_validar_notas_requires_three_values (test_main.TestToolsNotas.test_validar_notas_requires_three_values) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK

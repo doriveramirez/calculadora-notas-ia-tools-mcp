@@ -1,0 +1,27 @@
+Revisi?n del agente Publisher
+
+AGENTS.md: OK
+PRD.md: OK
+SPEC.md: OK
+README.md: OK
+main.py: OK
+tools_notas.py: OK
+test_main.py: OK
+
+Rama local: main
+
+Estado git:
+## No commits yet on main
+?? .gitignore
+?? AGENTS.md
+?? EVIDENCIAS.md
+?? PRD.md
+?? README.md
+?? REFLEXION.md
+?? SPEC.md
+?? evidencias/
+?? main.py
+?? test_main.py
+?? tools_notas.py
+
+GitHub MCP: no disponible directamente en este hilo, se documenta el intento.
