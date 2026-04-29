@@ -241,6 +241,7 @@ def image_sources() -> list[tuple[Path, Path, str, str]]:
         (ROOT / "README.md", EVIDENCES / "12_readme.png", "#13111c", "#f3f4f6"),
         (EVIDENCES / "revision_archivos_publisher.txt", EVIDENCES / "13_revision_archivos_publisher.png", "#0c1426", "#dbeafe"),
         (EVIDENCES / "pruebas_unitarias.txt", EVIDENCES / "14_pruebas_unitarias.png", "#0b1220", "#dcfce7"),
+        (EVIDENCES / "github_publicacion_y_issue.txt", EVIDENCES / "15_github_publicacion_issue.png", "#102a43", "#d9f99d"),
     ]
 
 
@@ -308,7 +309,7 @@ def summary_table(styles: StyleSheet1) -> Table:
         ["Tools", "Separación del cálculo en `tools_notas.py`."],
         ["Desarrollo", "Adaptación de `main.py` y pruebas unitarias."],
         ["Verificación", "Ejecuciones reales de media y mediana."],
-        ["Publisher", "Preparación local para GitHub e intento de MCP."],
+        ["Publisher", "Publicación real en GitHub y creación del issue de mejoras."],
     ]
     table = Table(rows, colWidths=[4.2 * cm, 11.0 * cm], hAlign="LEFT")
     table.setStyle(
@@ -347,6 +348,7 @@ def build_story(styles: StyleSheet1) -> list:
     run_mediana = (EVIDENCES / "ejecucion_mediana.txt").read_text(encoding="utf-8")
     tests = (EVIDENCES / "pruebas_unitarias.txt").read_text(encoding="utf-8")
     publisher_review = (EVIDENCES / "revision_archivos_publisher.txt").read_text(encoding="utf-8")
+    github_publication = (EVIDENCES / "github_publicacion_y_issue.txt").read_text(encoding="utf-8")
 
     story = []
     story.append(Spacer(1, 2.8 * cm))
@@ -380,7 +382,7 @@ def build_story(styles: StyleSheet1) -> list:
             [
                 "Se separa la lógica de cálculo en `tools_notas.py`.",
                 "El usuario puede elegir entre media o mediana.",
-                "La entrega documenta la parte de Publisher y el intento de MCP.",
+                "La entrega documenta la publicación real en GitHub y el issue creado.",
             ],
             styles,
         )
@@ -435,7 +437,9 @@ def build_story(styles: StyleSheet1) -> list:
     story.extend(md_flowables(publisher, styles, skip_first_heading=True))
     story.append(Paragraph("8.1. Revisión local del proyecto", styles["SubTitle"]))
     story.append(Preformatted(publisher_review, styles["CodeStyle"]))
-    story.append(Paragraph("8.2. Intento de uso de MCP", styles["SubTitle"]))
+    story.append(Paragraph("8.2. Publicación e issue en GitHub", styles["SubTitle"]))
+    story.append(Preformatted(github_publication, styles["CodeStyle"]))
+    story.append(Paragraph("8.3. Registro de la publicación", styles["SubTitle"]))
     story.extend(md_flowables(mcp, styles, skip_first_heading=True))
     story.append(PageBreak())
 

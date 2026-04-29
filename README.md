@@ -34,7 +34,7 @@ python main.py
 - Tester: comprobó media, mediana y clasificación final.
 - Documenter: organizó la documentación y las evidencias.
 - Tool Specialist: creó `tools_notas.py`.
-- Publisher: revisó la preparación del proyecto para GitHub.
+- Publisher: revisó el proyecto, verificó la publicación en GitHub y creó el issue de mejoras futuras.
 
 ## Evidencias
 Las capturas y registros del proceso están dentro de la carpeta `evidencias/`.

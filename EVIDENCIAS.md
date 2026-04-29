@@ -8,6 +8,7 @@
 - `evidencias/documenter_interaccion.md`
 - `evidencias/publisher_interaccion.md`
 - `evidencias/mcp_intento.md`
+- `evidencias/github_publicacion_y_issue.txt`
 - `evidencias/ejecucion_media.txt`
 - `evidencias/ejecucion_mediana.txt`
 - `evidencias/pruebas_unitarias.txt`
@@ -28,6 +29,7 @@
 - `evidencias/12_readme.png`
 - `evidencias/13_revision_archivos_publisher.png`
 - `evidencias/14_pruebas_unitarias.png`
+- `evidencias/15_github_publicacion_issue.png`
 
 ## Qué demuestra cada evidencia
 - Los documentos PRD, SPEC y AGENTS muestran la planificación.
@@ -35,6 +37,6 @@
 - Tool Specialist y Builder muestran cómo se genera y se integra esa lógica.
 - Las ejecuciones de media y mediana muestran que el programa funciona.
 - Tester muestra la verificación de los criterios de aceptación.
-- Publisher y el intento de MCP muestran la preparación del proyecto para GitHub.
+- Publisher y la evidencia de GitHub muestran la publicación real del proyecto y la creación del issue.
 - La revisión del Publisher muestra que el proyecto está separado, completo y preparado localmente para GitHub.
 - La captura de pruebas unitarias muestra la verificación automática del programa.

@@ -10,18 +10,10 @@ test_main.py: OK
 
 Rama local: main
 
-Estado git:
-## No commits yet on main
-?? .gitignore
-?? AGENTS.md
-?? EVIDENCIAS.md
-?? PRD.md
-?? README.md
-?? REFLEXION.md
-?? SPEC.md
-?? evidencias/
-?? main.py
-?? test_main.py
-?? tools_notas.py
+Repositorio p?blico:
+https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp
 
-GitHub MCP: no disponible directamente en este hilo, se documenta el intento.
+Issue creado:
+https://github.com/doriveramirez/calculadora-notas-ia-tools-mcp/issues/1
+
+Estado: proyecto publicado y seguimiento creado en GitHub.

@@ -18,7 +18,7 @@ Después, si está disponible GitHub MCP:
 3. crea un issue llamado `Mejoras futuras`
 
 ## Respuesta
-Se revisó la presencia de los archivos principales y se dejó constancia del estado del proyecto para su publicación.
+Se revisó la presencia de los archivos principales, se comprobó el repositorio publicado en GitHub y se creó el issue `Mejoras futuras`.
 
 ## Resultado
-El proyecto quedó preparado para GitHub y documentado aunque GitHub MCP no estuviera disponible en este hilo.
+El proyecto quedó publicado en GitHub y acompañado por un issue real para recoger mejoras futuras.
